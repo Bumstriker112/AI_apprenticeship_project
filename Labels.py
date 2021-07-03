@@ -1,27 +1,55 @@
-Labels = [   
-    'basket_bin',\
-    'bed',\
-    'bench',\
-    'cabinet',\
-    'call_bell',\
-    'cane_stick',\
-    'chair',\
-    'door',\
-    'electric_socket',\
-    'fan',\
-    'fire_extinguisher',\
-    'handrail',\
-    'human_being',\
-    'rack',\
-    'refrigerator',\
-    'shower',\
-    'sink',\
-    'sofa',\
-    'table',\
-    'television',\
-    'toilet_seat',\
-    'walker',\
-    'wardrobe',\
-    'water_dispenser',\
+Labels = [
+    'basket_bin',
+    'bed',
+    'bench',
+    'cabinet',
+    'call_bell',
+    'cane_stick',
+    'chair',
+    'door',
+    'electric_socket',
+    'fan',
+    'fire_extinguisher',
+    'handrail',
+    'human_being',
+    'rack',
+    'refrigerator',
+    'shower',
+    'sink',
+    'sofa',
+    'table',
+    'television',
+    'toilet_seat',
+    'walker',
+    'wardrobe',
+    'water_dispenser',
     'wheelchair'
-    ]
+]
+
+    classes = {
+        'trash bin': 'cylindrical',
+        'bed': 'rectangular',
+        'bench': 'rectangular',
+        'cabinet': 'rectangular',
+        'call bell': 'rectangular',
+        'cane stick': 'thin cylinder',
+        'chair': 'rectangular with 4 cylindrical feet',
+        'door': 'rectangular',
+        'electric socket': 'rectangular',
+        'fan': 'circular',
+        'fire extinguisher': 'cylndrical',
+        'handrail': 'cylindrical with curved edges',
+        'human being': 'complex shape, contains many',
+        'rack': 'rectangular',
+        'refrigerator': 'rectangular',
+        'shower': 'curver cylinder with circular head',
+        'sink': 'rectangular/circular',
+        'sofa': 'rectangular',
+        'table': 'rectangular/circular',
+        'television': 'rectangular',
+        'toilet seat': 'oval/circular/rectangle',
+        'walker': 'long cylindrical metal legs',
+        'wardrobe': 'rectangular',
+        'water dispenser': 'rectangular with cylidrical water container',
+        'wheelchair': 'seating area with circular wheels'
+    }

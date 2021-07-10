@@ -7,7 +7,7 @@ import streamlit as st
 import cv2
 
 st.title("ElderHelp.ai : Object detection assistance for the elderly")
-menu = ['Upload image','get shape information','About us']
+menu = ['Upload image','About us']
 choice = st.sidebar.selectbox("Menu",menu)
 
 # Disable scientific notation for clarity

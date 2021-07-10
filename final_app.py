@@ -6,33 +6,6 @@ import os
 import streamlit as st
 import cv2
 
-classes = {
-	'trash bin' : 'cylindrical',
-	'bed' : 'rectangular',
-	'bench' : 'rectangular',
-	'cabinet' : 'rectangular',
-	'call bell' : 'rectangular',
-	'cane stick' : 'thin cylinder',
-	'chair' : 'rectangular with 4 cylindrical feet',
-	'door' : 'rectangular',
-	'electric socket' : 'rectangular',
-	'fan' : 'circular',
-	'fire extinguisher' : 'cylndrical',
-	'handrail' : 'cylindrical with curved edges',
-	'human being' : 'complex shape, contains many',
-	'rack' : 'rectangular',
-	'refrigerator' : 'rectangular',
-	'shower' : 'curver cylinder with circular head',
-	'sink' : 'rectangular/circular',
-	'sofa' : 'rectangular',
-	'table' : 'rectangular/circular',
-	'television' : 'rectangular',
-	'toilet seat' : 'oval/circular/rectangle',
-	'walker' : 'long cylindrical metal legs',
-	'wardrobe' : 'rectangular',
-	'water dispenser' : 'rectangular with cylidrical water container',
-	'wheelchair' : 'seating area with circular wheels'
-}
 st.title("ElderHelp.ai : Object detection assistance for the elderly")
 menu = ['Upload image','get shape information','About us']
 choice = st.sidebar.selectbox("Menu",menu)
@@ -85,12 +58,6 @@ if choice == 'Upload image':
 				st.write("confindence score : " , max_value , "%")
 		else:
 			st.write("No object was able to be predicted on that minimum required confidence score")
-
-elif choice == 'get shape information' :
-	st.write("Enter the object whose shape details are required")
-	required_object = st.text_input("")
-	if required_object in classes:
-		st.write("Shape of : ", required_object, " is : ", classes[required_object])
 
 else:
 	st.title("About us")
